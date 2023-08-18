@@ -69,7 +69,7 @@ button {
 }
 
 section:hover,
-button:hover {
+.btn:hover {
     border-radius: 20px;
     box-shadow: 1px 1px 9px yellow;
     transition: 600ms;
