@@ -1,0 +1,217 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #13113C;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+header {
+    width: 100vw;
+    border: 2px solid white;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+main {
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+li {
+    padding: 5px 10px;
+}
+
+
+/* Style for the pie chart */
+.ch {
+    width: 500px;
+    height: 260px;
+
+}
+
+/* Style for the stock list and table sections */
+
+.container2 {
+    width: 60vw;
+
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+
+    color: black;
+    padding: 10px 5px 10px 3px;
+
+
+}
+
+
+.space-top {
+    margin-top: 10px;
+
+}
+
+section,
+.two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+.container3 {
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.content-section {
+    width: 60vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: flex-start;
+    background-color: white;
+    gap: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.table-section {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 60vw;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: aliceblue;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    text-align: center;
+}
+
+button {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+
+    .searchBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    canvas {
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Adjust header styles */
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* Adjust main section styles */
+    main {
+        padding: 20px;
+    }
+
+    /* Adjust table styles */
+    table {
+        font-size: 14px;
+    }
+
+    /* Adjust chart canvas styles */
+    .ch {
+        width: 100%;
+    }
+}
